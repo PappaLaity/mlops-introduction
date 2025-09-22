@@ -1,5 +1,5 @@
 .venv/
-___pycache__
+*___pycache__
 *.txt
 *.log
 *.env
