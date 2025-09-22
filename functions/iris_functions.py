@@ -9,10 +9,11 @@ def load_iris_data():
         
     iris = datasets.load_iris()
 
+    data = pd.DataFrame(iris.data, columns=iris.feature_names)
     target = iris.target
-    data = iris.data
 
     return train_test_split(data, target, test_size=0.3, random_state=42)
+
 
 
 def train_iris_lr_model(X_train,y_train):
